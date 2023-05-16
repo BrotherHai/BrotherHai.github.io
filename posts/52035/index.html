@@ -1,0 +1,326 @@
+<!DOCTYPE html><html lang="zh_CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图 | 海的相思</title><meta name="keywords" content="大模型,PHM"><meta name="author" content="小海"><meta name="copyright" content="小海"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="摘要 预测和健康管理（PHM）技术在工业生产和设备维护中发挥着关键作用，它可以识别和预测可能的设备故障和损坏，从而采取必要的维护措施，提高设备的使用寿命和可靠性，同时降低生产成本和停机时间。近年来，基于人工智能的PHM技术在工业物联网和大数据背景下取得了显著成就，广泛应用于铁路、能源和航空等各个行业，用于状态监测、故障预测和健康管理。ChatGPT和DALLE-E等大型基础模型（LSF模型）的出现">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图">
+<meta property="og:url" content="https://brotherhai.github.io/posts/52035/index.html">
+<meta property="og:site_name" content="海的相思">
+<meta property="og:description" content="摘要 预测和健康管理（PHM）技术在工业生产和设备维护中发挥着关键作用，它可以识别和预测可能的设备故障和损坏，从而采取必要的维护措施，提高设备的使用寿命和可靠性，同时降低生产成本和停机时间。近年来，基于人工智能的PHM技术在工业物联网和大数据背景下取得了显著成就，广泛应用于铁路、能源和航空等各个行业，用于状态监测、故障预测和健康管理。ChatGPT和DALLE-E等大型基础模型（LSF模型）的出现">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.liuxiaohai.ren/20230516211434.png">
+<meta property="article:published_time" content="2023-05-16T11:27:00.000Z">
+<meta property="article:modified_time" content="2023-05-16T13:15:04.535Z">
+<meta property="article:author" content="小海">
+<meta property="article:tag" content="大模型">
+<meta property="article:tag" content="PHM">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.liuxiaohai.ren/20230516211434.png"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://brotherhai.github.io/posts/52035/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: {"appId":"6NPNY9RDXE","apiKey":"0bb764dca77fbe684510821caa526895","indexName":"666","hits":{"per_page":6},"languages":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}.","hits_stats":"${hits} results found in ${time} ms"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-16 21:15:04'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="baidu-site-verification" content="code-eGLQYdBIEA" /><script src="/live2d-widget/autoload.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://s4.ax1x.com/2021/12/15/ozT0iQ.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">9</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/2021/"><i class="fa-fw fas fa-heart"></i><span> 2021</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.liuxiaohai.ren/20230516211434.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">海的相思</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/2021/"><i class="fa-fw fas fa-heart"></i><span> 2021</span></a></div><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-05-16T11:27:00.000Z" title="Created 2023-05-16 19:27:00">2023-05-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-05-16T13:15:04.535Z" title="Updated 2023-05-16 21:15:04">2023-05-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%BA%E6%96%87%E9%98%85%E8%AF%BB/">论文阅读</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>摘要</h1>
+<p>预测和健康管理（PHM）技术在工业生产和设备维护中发挥着关键作用，它可以识别和预测可能的设备故障和损坏，从而采取必要的维护措施，提高设备的使用寿命和可靠性，同时降低生产成本和停机时间。近年来，基于人工智能的PHM技术在工业物联网和大数据背景下取得了显著成就，广泛应用于铁路、能源和航空等各个行业，用于状态监测、故障预测和健康管理。ChatGPT和DALLE-E等大型基础模型（LSF模型）的出现标志着人工智能从AI-1.0进入AI-2.0的新时代，深度模型已从单模态、单任务和有限数据的研究范式迅速演变为多模态、多任务、海量数据和超大型模型范式。</p>
+<h1>引言</h1>
+<p>预测与健康管理(PHM)是确保工业设备安全可靠运行的关键技术[1,2]。PHM通过对设备的全面监控和管理，降低了设备故障的概率，最大限度地减少了生产停机时间，从而提高了设备的可靠性和生产效率，为企业创造了显著的经济效益[3,4]。在工业生产实践中，PHM有三个核心任务:故障检测(异常检测)[5-7]、故障诊断[8-11]和剩余使用寿命(RUL)估计[12-14]。异常检测的目的是及时发现设备的异常活动和状态，故障诊断的目的是确定设备故障的原因和位置。另一方面，RUL估计预测未来设备可能发生故障的时间。这三项任务从不同的角度协同工作，确保设备的安全运行。随着工业设备越来越精密和复杂，运行监测数据量越来越大，工业数据分析、设备状态监测和健康管理的自动化是必要的[15]。这种自动化可以显著降低工业资产的维护成本，提高设备状态识别和故障预测的效率和准确性，增强设备运行的可靠性和安全性。</p>
+<p>近年来，随着机器学习和深度学习[16-18]技术的进步，PHM领域取得了重大进展，实现了工业设备状态监测和故障预测的自动化，大大提高了工业资产维护的智能化水平。自20世纪初以来，机器学习技术在实现PHM智能识别和决策方面发挥了至关重要的作用[19-21]。基于机器学习的PHM模型主要包括两个核心部分:特征工程和机器学习模型。特征工程利用统计分析和信号分析技术[22-26]从工业监测数据中提取与健康相关的特征信息。机器学习模型使用各种预测和识别模型，如支持向量机(SVM)[27-29]和k近邻(KNN)[30-32]来实现智能决策。这一研究范式使PHM初步实现了自动化，减少了工业设备维护中对体力劳动的需求。</p>
+<p>然而，尽管取得了进展，仍然需要手工特征工程，这限制了PHM处理大规模数据的能力。机器学习模型有限的学习能力使得这一范式难以适应大数据时代带来的挑战。</p>
+<p>自2012年以来，深度学习技术[33-35]以其强大的数据分析、特征提取和智能决策能力，彻底改变了各个研究领域的范式。深度学习通过建立多层次的神经网络结构，实现对复杂数据的自动特征提取和模式识别，能够自动处理高维、非线性、海量的数据，并具有自适应和泛化能力。因此，深度学习已经成为PHM领域的主流工具[17,18,36]，不断提高工业资产维护的自动化和智能化。针对不同的PHM应用和任务，已经提出了各种深度网络模型，如自编码器[37-39]、卷积神经网络(cnn)[40-49]和循环神经网络(rnn)[50-52]。自动编码器通过数据压缩或重构实现无监督表示学习，在数据降噪、降维和异常检测等任务中表现良好[53]。cnn基于卷积理论，通过权值共享和层次学习实现了高效的时空特征提取，适用于工业设备的健康监测、故障预测诊断和RUL预测[54]。rnn擅长对远距离时序特征进行编码，使其成为分析和处理各种时序信号的理想选择[55]。因此，rnn被广泛应用于各种工业PHM应用中。深度学习技术通过构建端到端的智能决策模型，显著减少了工业PHM应用中对体力劳动的需求[8]。然而，现有的深度学习模型在多任务、泛化和认知能力方面仍然存在局限性。因此，突破这些限制，实现具有高度泛化和认知能力的综合性多任务智能模型是一个迫切需要解决的问题。</p>
+<p>在过去的两年中，大规模基础模型(LSF-Models)[56,57]，如GPT-3[58,59]和ChatGPT[60,61]，已经展示了具有流畅文本对话的高度智能的自然语言理解能力。大规模的多模态文本和图像理解模型，如GPT-4[62]、DALL-E-2[63]和segment anything model (SAM)[64]，进一步证明了该研究范式在多模态对话、图像生成和分割方面的非凡成就。基于人工智能的深度模型从单模态、单任务、有限数据的研究范式(AI-1.0)迅速发展到多模态、多任务、海量数据、超大模型的研究范式(AI-2.0)。图1清楚地显示了这两种研究范式的区别。AI-2.0的核心是具有跨领域知识的LSF-Model，它可以理解数据的一般概念，无需额外训练就可以对未见过的数据进行Zero-shot泛化[64]。该模型的实现主要基于以下三个关键部分:强效特征提取模型[65-68]、无监督表示学习算法[69-71]和多模态融合算法[72,73]。此外，广泛的未标记或标记的多模态数据是这一发展的先决条件。然而，如何利用PHM领域的跨领域知识构建LSF-Model仍然是未知的，如何开发适合PHM领域的特征提取、表示学习和多模态融合算法仍然缺乏足够的研究和分析。此外，PHM领域如何应对人工智能领域的巨大变化仍然没有定论，缺乏系统的文献综述，也缺乏未来研究方向的路线图。为了填补这一空白，本文首先系统介绍了lsf模型的关键组成部分和前沿进展。然后，我们系统地回答了如何建立有效的适合PHM领域的lsf模型。我们还详细阐述了这一研究范式将面临的挑战和未来发展的路线图。</p>
+<p>具体而言，本文的主要工作总结如下:</p>
+<ol>
+<li>
+<p>对lsf模型的三个关键组成部分和各自的研究进展进行了全面的综述。</p>
+</li>
+<li>
+<p>结合PHM领域的实际情况，系统地分析和回答了如何构建有效的适合工业PHM应用的lsf模型。</p>
+</li>
+<li>
+<p>讨论了lsf模型在PHM领域的研究路线图，并详细分析了该研究范式面临的挑战和解决方案。</p>
+</li>
+</ol>
+<p>本文的其余部分组织如下。第2节重点介绍LSF-Models的关键组件，包括Transformer、自监督学习和多模态融合。第3节综述了lsf模型在自然语言处理和计算机视觉领域的研究进展。第4部分系统地回答了如何实现lsf模型用于PHM，包括研究现状、存在的问题和解决方案。第5部分全面讨论了lsf模型研究在PHM领域面临的挑战及其未来路线图。结论见第6节。</p>
+<h1>PHM的大模型</h1>
+<p>虽然深度学习模型在PHM中取得了显著的成绩，但它们的有效性有限，因为它们通常是针对特定领域和任务进行训练和优化的。因此，在复杂和开放的工业场景中，深度学习模型可能会表现出一些局限性，例如有限的泛化、多任务和认知能力。现有模型在已知场景中可能表现良好，但很难有效地推广到未知场景[192-194]。这种零点泛化能力的缺乏，使其难以应对实际工业场景的复杂性。</p>
+<p>此外，现有的深度模型通常专注于单个任务。然而，工业设备有数百个核心部件，都需要健康监测和故障预测。为每个核心组件开发一个相应的深度模型是不现实的。最后，现有的深度模型认知能力有限，难以理解工业数据的性质和一般概念，因此经常输出不可理解和错误的结果。</p>
+<p>lsf模型的研究为我们提供了一种有效解决上述问题的方法。</p>
+<p>如第3节所述，现有的lsf模型，如ChatGPT[62]和SAM[64]，已经表现出出色的数据理解能力、零概率泛化能力和强大的多任务能力。此外，它还具有一定的高级认知能力，可以解决一些推理任务。因此，LSF-Models的成功标志着人工智能领域的研究范式从单模态、单任务、有限数据的研究范式(AI 1.0)向多模态、多任务、海量数据、超大模型的研究范式(AI 2.0)的转变。然而，如何在PHM领域发展lsf模型仍然是一个没有定论的问题。</p>
+<p>为了促进LSF-Model在PHM领域的研究和应用，本节从四个方面对如何构建面向PHM应用的LSF-Model进行了说明和分析。</p>
+<h2 id="PHM的大规模数据集">PHM的大规模数据集</h2>
+<h3 id="研究现状">研究现状</h3>
+<p>与NLP和CV领域不同，PHM领域的数据一般是由各种传感器采集的高频或低频时间序列数据，如振动信号[195]、声音信号[196]、电流和电压[197]、温度[198]、压力[199]等。此外，还有一些应用尝试使用视频和图像数据来实现设备健康监测，如轨道缺陷监测[200,201]、不良品识别[202,203]、设备裂纹监测[204,205]等。目前，PHM社区已经开源了数十个不同规模和领域的数据集，如轴承故障数据集[206]、轴承退化数据集[207]、齿轮箱故障数据集[208]、飞机发动机退化数据集[209]、三相电机故障数据集[210]、工业生产监测数据集[211]、风力发电机监测数据集[212]等。CWRU轴承数据集[195]作为最经典的故障诊断数据集，仅包含有限的工况和四种不同的健康类别，每个故障类别仅包含三个故障度。Wang等人[207]发布的XJTU-SY轴承数据集仅包含15个轴承从健康到失效的退化数据。Lessmeier等[213]发布的数据集包括32个轴承的振动信号数据和驱动电机的电流数据。Wang等[211]发布的晶圆缺陷识别数据集包含38000个晶圆数据样本，包括38种不同类型的混合缺陷类别。Chao等[209]开源了涡扇发动机退化仿真数据集，该数据集包含8组数据，128个单元，有7种故障模式。</p>
+<p><strong>可以看出，这些数据集的规模非常小，很难满足LSF-Models的训练和优化需求。基于这些数据集训练的深度模型很难理解PHM数据的本质和规律，并且具有多任务和零采样泛化能力。因此，构建PHM领域的大规模数据集是实现lsf模型的第一步。</strong></p>
+<p>随着工业互联网和物联网(IoT)技术的出现[214]，现代工业生产设备和各种复杂的机械设备上安装了大量传感器，以便对系统的各种物理量进行实时监控，及时发现异常。因此，大多数大型企业都收集了大量的工业数据，并建立了相应的数据中心。以中国的城市轨道列车为例，其拥有数十年的运行经验和积累的实际运行数据，产生了海量而全面的数据集[215]。现在，一列火车可以实时监控和记录与子系统、组件和外部环境相关的数百个变量，例如轴承油温度、变速箱噪音以及各种系统的电流和电压。类似地，轨道检测车可以在较长的距离上获得诸如轨道标尺、水平和高度等密集参数。这些海量的数据集提供了关于列车子系统和组件的实时状态、退化过程和相互依赖的有价值的信息。</p>
+<p>总的来说，它们为构建lsf模型奠定了基础。</p>
+<p>尽管这些工业数据在构建lsf模型以解决各种PHM任务方面具有显着的潜力，但仍需要进一步探索。**工业数据可能包括各种传感器数据，如信号、图像和视频，以及大量的文本信息，包括维护工作订单和报告。**因此，构建lsf模型来有效地利用这些多传感器数据提出了新的挑战。此外，单个数据中心的数据规模对于构建LSF-Model可能会受到限制。例如，GPT 3.0[58]的训练数据超过4100亿个token，而GPT 3.5[60]的训练数据可能显著超过GPT 3.0。为了解决这个问题，跨中心或区域的联合深度模型训练和优化是一个可行的解决方案。然而，这些工业数据通常可能涉及商业秘密，因此政府和企业建立了严格的数据保护法规，这极大地限制了工业数据的共享和使用。</p>
+<h3 id="解决方案">解决方案</h3>
+<p>尽管LSF-Models在NLP和CV领域显示出了令人鼓舞的结果，但在PHM领域的数据与前两者有很大不同。**因此，有必要根据PHM领域独特的数据特征，对LSF-Models的关键组件进行优化和改进，以在该领域取得可观的性能。这需要探索新的特征提取模型、自监督表示学习算法和针对PHM领域的多模态融合算法。**此外，在工业领域，学术界建立了前沿的算法设计和数据分析能力，而工业界积累了大规模的工业监控数据。因此，建立校企联合研究中心，充分发挥各自优势，将有效应对现有挑战，显著推动LSF-Model在PHM领域的研究。</p>
+<p>此外，LSF-Models的实现需要访问大规模数据。在利用这些数据的同时确保数据隐私保护是另一个值得关注的关键问题。与NLP和CV领域可以从互联网上大规模获取相关数据不同，PHM数据集掌握在设备运营商手中，往往非常宝贵，可能包含商业机密。此外，随着对数据隐私和安全的日益关注，监管机构已经出台了新的法律来规范数据的管理和使用[216]。因此，有必要开发符合严格隐私保护法规的解决方案，并解决数据碎片化和隔离的挑战。</p>
+<p>**联邦学习[217,218]是一种具有隐私保护和安全加密的分布式机器学习框架，是一种可能的解决方案。它允许分散的参与者在不向其他参与者泄露私人数据的情况下协作进行机器学习模型训练。目前，PHM领域已经提出了基于联邦学习的数据隐私保护解决方案[219-221]。**图6为基于联邦学习的多车多中心数据隐私安全防护架构。然而，现有的大多数联邦学习算法还没有应用到实际的工业大规模数据分析中。因此，推动大规模工业数据分析和lsf模型的建立需要学术界和产业界的共同努力。</p>
+<h2 id="PHM-Transformer">PHM Transformer</h2>
+<h3 id="研究现状-2">研究现状</h3>
+<p>Transformer[75]是一种深度学习模型，专门用于远距离特征相关性建模，允许对信号中任意两个位置之间的相关性进行建模，而不考虑特征之间的实际物理距离。其高效的长期依赖建模能力使其非常适合于分析和处理PHM领域的各种传感器数据。</p>
+<p>因此，Transformer在各种PHM应用中得到了广泛的应用[42,222 -224]，并取得了令人印象深刻的性能结果。Jin等[224]提出了一种基于时间序列的Transformer模型，与传统的CNN和RNN模型相比，该模型具有更好的故障识别能力。Wang等[42]提出了一种基于Transformer的高速列车车轮磨损预测模型，该模型利用了Transformer和CNN的优势，对全局和局部信息进行了有效编码。Fang等[222]对Transformer模型进行了优化，提出了一种基于Transformer的轻量级故障诊断框架，在降低计算复杂度的同时实现了高效准确的故障诊断。</p>
+<p>尽管在PHM领域取得了显著的成功，Transformer模型仍然有一些需要解决的限制。首先，Transformer模型主要用于处理文本等静态输入数据，虽然可以通过位置编码纳入时序信息，但并不直接考虑时序信息[225]。因此，**Transformer在处理工业时间序列数据时，很难充分了解数据的连续时间关系。**其次，Transformer模型可能不能很好地处理有噪声的工业数据。在实际的工业生产过程中，包含噪声的工业数据很常见，<strong>Transformer模型可能不够健壮，无法处理此类噪声数据</strong>。第三，如前所述，<strong>工业数据通常包含多种类型的传感器数据和大量的文本信息，这对Transformer架构的设计提出了新的挑战。Transformer模型通常不能同时处理多个传感器数据。</strong></p>
+<h3 id="解决方案-2">解决方案</h3>
+<p>**由于Transformer模型的实现基于自关注机制，因此在考虑时间序列数据之间的时间关系方面面临挑战。自注意机制仅限于考虑序列中位置之间的关系，缺乏捕捉时间轴上的相对时间关系的能力。**要解决这个问题，可以采用几种方法。</p>
+<p>首先，<strong>可以在Transformer模型中集成时间编码机制，以方便对时间关系的直接学习</strong>。其次，<strong>可以探索一种有效的时间注意机制来捕获Transformer体系结构中数据之间的时间依赖性</strong>。最后，<strong>考虑传感器数据的特点，可以探索基于Transformer的时间序列模型，如时间序列Transformer</strong>[226]。这些模型需要专门设计来处理时间序列数据，整合全局时间序列信息，改进时间相关建模。</p>
+<p>在工业领域收集的数据通常包含复杂的噪声，而不像NLP和CV领域，数据通常是干净的。因此，大多数现有的深度学习模型都无法处理时间序列信号上的噪声或不相关信息的干扰。在传统的信号分析中，提出了各种方法来去除信号噪声，提取有价值的信息。这些方法包括时域和频域滤波[227,228]、快速傅立叶变换(FFT)[229,230]、小波变换[231,232]等。因此，变压器和信号分析技术的深度集成可能是解决这一问题的一个有希望的解决方案。例如，Rao等人[233]提出了<strong>一种基于fft的全局滤波层来取代Transformer的自关注机制，从而获得更好的性能</strong>。同样，Wang等[41]通过将<strong>小波变换与深度学习模型融合，在噪声环境下取得了最佳性能</strong>，所提出的多层小波模型如图7所示。然而，<strong>如何赋予Transformer更先进、更有效的信号分析能力还有待进一步研究。</strong></p>
+<p>最后，为了同时处理多传感器数据和工业文本数据，**必须重新设计Transformer架构并创建多模态Transformer[234-236]。**多模态Transformer的主要思想是将不同类型的数据(如文本、图像和音频)嵌入到Transformer模型中，从而在处理多模态数据时支持端到端建模。基于变压器的多模态嵌入、基于变压器的跨模态预训练和基于变压器的多模态关注是可行的解决方案。多模态嵌入对各种传感器数据进行编码并嵌入到Transformer架构中，以同时表示多个传感器数据。</p>
+<p>跨模态预训练利用各种传感器数据对Transformer进行预训练，从不同的数据类型中学习有价值的信息，然后应用到下游的多传感器数据处理中。多模态注意是利用注意权值实现多传感器信息自适应融合的常用解决方案。</p>
+<h2 id="PHM的自监督学习">PHM的自监督学习</h2>
+<h3 id="研究现状-3">研究现状</h3>
+<p>如前所述，在工业生产和设备运行过程中收集了大量的传感器监测数据。然而，学术界和工业界很难充分利用这些大量的操作数据来构建PHM模型。主要的挑战是标记数据的不可用性、噪声的存在和大数据量。因此，现有的深度模型很难有效地从这些数据中提取有用的信息。自监督学习[70,124]可以从大量未标记的数据中自动学习有价值的特征表示，已经成为构建PHM基础模型的核心算法。目前，自监督学习已经在PHM领域得到了研究和应用[237-241]。例如，Zhang等人[239]开发了一种包含先验知识的自监督算法，并在小标记数据集上展示了良好的故障识别能力。Wang等[49]提出了一种新的自监督表示训练的代理任务，有效地从未标记的信号中提取有价值的信息。同时，Ding等人[237]开发了一种基于对比学习的预训练算法，该算法在识别轴承的早期故障方面显示出希望。</p>
+<p>尽管自监督学习在PHM领域显示出巨大的潜力，<strong>但它需要设计有效的代理任务来学习有用的特征表示</strong>。<strong>当前的代理任务可能无法充分捕获故障和健康相关的信息，特别是在复杂的工业系统中</strong>。此外，自监督学习模型可能对噪声敏感，<strong>在数据质量较差的情况下，噪声会影响学习到的特征表示，从而降低故障诊断和健康管理的性能</strong>。此外，<strong>现有的自监督学习算法难以处理包含多种传感器模式的真实工业数据。因此，开发能够处理此类工业数据的有效的自监督表示学习算法是一个关键的关注领域。</strong></p>
+<h3 id="解决方案-3">解决方案</h3>
+<p>研究lsf模型的根本目的是实现few-shot or zero-shot。</p>
+<p>因此，在设计模型和算法时需要解决的首要问题是:<strong>什么样的模型和算法可以实现零次泛化</strong>[64]?类似自编码器的架构[53]，特别是那些与信号重构、信号补全、信号去噪等相关的架构，构成了一种有效的解决方案。然而，<strong>它们的特征表示过程缺乏与健康信息的直接关联。因此，在制定借口任务时，必须确保最大程度地与设备健康相关。</strong></p>
+<p>在PHM领域，**频域比时域更能有效地反映设备的故障和健康状态信息。此外，从频域层面分析可以更好地处理噪声干扰，增强模型噪声的鲁棒性。**因此，在构建自监督学习托辞任务时，综合考虑信号频域信息是十分必要的。对此存在几种潜在的解决方案。1)**在自监督学习算法中同时利用时域和频域特征，可以融合成统一的特征表示。这涉及到使用原始时域数据及其相应的频域数据作为输入，训练多模态自监督学习模型来学习时域和频域特征。**2)<strong>发展深度频率空间学习模型，如基于小波的CNN[41,46,47]，可以直接学习频率特征，捕获数据中的频率信息。</strong></p>
+<p>3)**构建依赖于信号频域数据的托辞任务，如重构频域信息。**4)**创建基于信号时频一致性的对比学习算法[242]，对时间序列数据进行有效的自监督训练。**5)<strong>多传感器数据的相关性可以用来构建借口任务。例如，可以使用一部分传感器数据来预测其他传感器数据的值，诱导模型学习多传感器之间的直接相互依赖关系，促进工业多传感器数据的特征表示学习</strong>。最后，不同的自监督学习算法可以表示不同的数据特征信息。</p>
+<p>结合多种自监督学习算法可以帮助模型学习更多样化的特征表示集，从而提高下游任务的性能。因此，在实践中使用各种算法对模型进行全面的预训练是一个很好的解决方案。</p>
+<h2 id="PHM的多模态融合">PHM的多模态融合</h2>
+<h3 id="研究现状-4">研究现状</h3>
+<p>在PHM领域，主要数据源是从各种传感器获得的离散时间序列数据，包括振动信号、电流和电压、温度和压力。此外，某些应用程序试图利用视频和图像数据进行设备健康监测，例如轨道缺陷监测、缺陷产品识别和设备裂纹监测。工业领域内的数据可能包含许多传感器数据类型(例如，信号，图像，视频等)和大量文本信息(例如，维护工作订单，维护报告等)。因此，相对于NLP和CV领域，PHM领域更注重多传感器数据的信息融合，以实现对设备健康状态的更全面的了解。目前已有多篇论文对多传感器信息的融合进行了探讨[243-248]。例如，Yang等人</p>
+<p>[243]提出了一种基于峰度加权算法和金字塔原理的多传感器多尺度融合模型，在轴承健康识别中表现出较强的性能。Long等[245]利用Hilbert变换和FFT从多传感器信号中提取有价值的频率信息，然后建立了基于注意力的故障识别模型。Kumar等[248]同时考虑振动和声音信号，利用小波变换作为特征提取器，随后应用机器学习方法进行故障诊断。</p>
+<p>然而，大多数现有数据集只包含一到三个传感器的数据，远远不能满足实际工业应用的需求。此外，随着传感器数量的增加，不同传感器产生的数据可能具有不同的分布、尺度和信噪比。</p>
+<p>适当的预处理方法和融合策略对PHM模型的性能至关重要。<strong>此外，在工业领域，多模态融合算法必须考虑各种工业传感器信息(如信号、图像、文本等)的融合。然而，现有的研究缺乏足够的解决方案和优化策略来应对这一挑战。</strong></p>
+<h3 id="解决方案-4">解决方案</h3>
+<p>PHM中有效的多传感器数据融合需要在数据融合、特征融合、模型融合等方面综合努力。以下解决方案可以增强模型的多传感器融合能力:</p>
+<p>1)探索新的方法，**将来自多个传感器或来源的数据集成为统一的数据表示，并考虑每个传感器的独特特征。**这种数据融合方法在处理不同模式的数据时，可以提高模型的性能和稳定性。</p>
+<p>2)<strong>针对特定任务和数据特征构建适当的关注机制，实现高效的多传感器关联建模，融合传感器有价值的特征</strong>。该机制使模型能够捕获传感器之间的相关性并突出显示相关特征。</p>
+<p>3)优化模型的结构和参数，更好地适应不同传感器数据的特点。**针对不同的传感器数据，建立不同的模型，然后利用模型融合算法建立模型之间的联系，实现多传感器信息融合。**通过根据不同传感器的具体特性定制模型，可以提高性能，并做出更准确的预测。</p>
+<p>4)研究基于<strong>图神经网络(graph neural network, GNN)的多模态融合算法</strong>[249-251]，对多模态数据之间的复杂关系进行建模。该方法利用GNN构造多模态数据的图结构，将不同传感器或数据类型的信息作为节点输入，实现多模态数据的融合。</p>
+<p>最后，<strong>以上给出的解都是一般解，需要将特定数据和应用的特征提取模型和自监督算法充分结合起来，才能实现多模态数据融合的最优性能。</strong></p>
+<h1>挑战和未来路线图</h1>
+<h2 id="PHM中大型基础模型的挑战">PHM中大型基础模型的挑战</h2>
+<p>图8显示了LSF-Models在PHM领域面临的挑战，主要包括数据集、安全性、可信度、可转移性、高级认知性、可解释性和边缘设备部署等七个方面。下面将详细描述它们。</p>
+<p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v1GXn4gBkj9xlDQ4/img/fad7cb92-5418-4c6a-a8d4-a89cb0d564ba.png" alt="image"></p>
+<h3 id="大规模数据集">大规模数据集</h3>
+<p>企业不愿向竞争对手透露自己的商业敏感信息，包括重要设备的性能参数、维修记录、生产过程故障等。</p>
+<p>这些信息可以被竞争对手利用来提高竞争力或损害公司声誉。用于PHM应用的工业生产数据和机械设备运行监测数据将不可避免地涉及这些商业敏感信息。因此，企业建立了严格的数据保护措施，导致PHM领域大规模可公开访问的工业数据严重缺乏。此外，现代工业设备经常在复杂和无界的环境中运行，导致数据收集经常充满噪音，数据丢失，失真，异常干扰和其他问题。此外，部署的各种工业传感器阵列导致获取不同的数据类型，需要处理不同的模态数据。</p>
+<p>因此，利用这些数据构建有效的大规模PHM模型具有挑战性。</p>
+<h3 id="安全性">安全性</h3>
+<p>尽管lsf模型已经在大量数据集上进行了训练，但它们仍然容易受到安全威胁，例如对抗性攻击[252]。对抗性攻击可以通过设计良好的噪声干扰PHM模型的输出，导致模型产生错误的结果。这在关键PHM应用中是不可接受的，例如核电站的安全监测。除了直接攻击之外，在大规模数据的训练过程中可能会引入无意的偏差或错误，从而导致模型输出有偏差甚至错误的结果。在这种情况下，PHM模型可能存在安全风险，并且很难进行故障排除，因为特定的偏差和错误结果只会偶尔出现在特定的场景中。此外，由于LSF-Models需要大量的计算资源进行训练和推理，因此它们也容易受到针对计算资源的攻击，例如DDoS攻击[253,254]和恶意软件攻击[255,256]。</p>
+<h3 id="可信度">可信度</h3>
+<p>LSF-Model的可信度[257]代表了用户对其输出的准确性和一致性的信心。此外，模型必须承受诸如偏差、噪声和输入数据扰动等干扰，同时保持预测的准确性和稳定性。目前，与传统深度学习模型相比，LSF-Model的可信度有了显著提高。然而，在PHM领域，复杂的工作条件、不同的背景噪声和不同的旧设备导致了相当大的数据分布差异。因此，提高lsf模型的可信度仍然是一个重大挑战。</p>
+<h3 id="可迁移性">可迁移性</h3>
+<p>LSF-Model的可移植性是指该模型是否能够很好地迁移和适应不同的任务和数据集。在PHM领域，不同的场景需要不同的任务(例如，异常检测、故障预测、规则估计)。然而，这些PHM任务的性质和实现非常不同，如何在各种任务之间实现相当大的可移植性和适应性是一个挑战。此外，不同的机械设备具有不同的性能;例如，轴承、齿轮箱和曲轴都是核心旋转设备，但它们的失效特征和性能差异很大。另一个挑战是如何处理这些差异，使lsf模型在各种应用下具有较强的可移植性和适应性。</p>
+<h3 id="先进的认知">先进的认知</h3>
+<p>目前对大规模语言和视觉模型的研究表明，lsf - model具有先进的认知能力，可以在一定程度上学习一般概念[62,64]。然而，<strong>目前尚不清楚这些模型如何获得这些能力，以及如何明确地增强它们</strong>。此外，PHM数据表现出显著的随机性，这对模型从这些数据中归纳出高级认知提出了挑战。与文本和视觉数据具有规律性相比，时间序列数据的多样性使得模型难以提取广义特征表示。</p>
+<h3 id="可解释性">可解释性</h3>
+<p>可解释性[258-261]是指模型的决策和输出是可以被解释和理解的，透明度是指模型的内部结构和运行是可以被人类理解和审查的。然而，随着lsf模型的发展，这些模型的内部工作原理和运行机制越来越难以解释和理解，透明度越来越低。此外，LSF-Models可能在训练期间捕获不可预测的数据关系和噪声，这可能导致重大的安全风险。在PHM领域[41,262,263]，可解释性和透明度非常重要，因为缺乏透明度的模型在核能和航空航天等领域具有挑战性。<strong>然而，lsf模型的复杂性使得研究它们的可解释性和透明性极其困难。</strong></p>
+<h3 id="边缘设备部署">边缘设备部署</h3>
+<p>lsf模型参数庞大，结构复杂，需要大量的计算资源进行训练和推理。但在PHM领域，往往需要将监控模型部署到边缘计算设备或移动终端上，以满足实时性和安全性要求。</p>
+<p>然而，**由于现有的边缘计算设备通常缺乏执行lsf模型的能力，因此在不影响其性能的情况下实现此类模型的部署构成了重大挑战。**因此，必须设计新的技术来解决这个问题，并促进lsf模型在边缘计算设备上的部署[264-266]，同时保持其性能。</p>
+<h2 id="PHM中大尺度基础模型的路线图">PHM中大尺度基础模型的路线图</h2>
+<p>图9显示了LSF-Models在PHM领域的未来路线图。根据LSF-Models面临的挑战，本节将探讨如何解决这些挑战，并详细阐述未来的路线图。下面将详细描述它们。</p>
+<p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v1GXn4gBkj9xlDQ4/img/fe945619-0353-4f1a-92cb-f21af72f53fe.png" alt="image"></p>
+<h3 id="大规模数据集的路线图">大规模数据集的路线图</h3>
+<p>PHM领域构建大规模数据集的核心解决方案是消除企业对数据隐私和安全的担忧，特别是使所有企业都能获得利益，从而实现互利共赢。为此，PHM领域的大规模数据集分析和利用可以通过以下方法推进。</p>
+<p>1)国际国内标准建设。首先，在学术界和产业界的共同推动下，构建一套完整的标准体系，包括数据采集和存储标准等。然后，利用这些标准规范行业的数据采集方式、数据采集对象、数据采集频率、数据采集质量、数据存储格式、数据隐私保护要求等。</p>
+<p>2)构建产业数据联盟，实现数据共享。在政府或行业协会的推动下，建立行业数据联盟，在保护各企业商业秘密的同时，实现行业数据共享，实现互利共赢。</p>
+<p>利用大规模行业数据建立的模型可以反馈给参与公司，以提高其产品的质量、可靠性和安全性。</p>
+<p>3)推进校企联合研究中心建设。在工业领域，学术界掌握了前沿的算法设计和数据分析能力，工业界掌握了大规模的工业数据。因此，建立校企联合研究中心可以协同发挥各自的优势，促进lsf模型在PHM领域的研究进展。</p>
+<p>4)探索数据隐私保护算法。在保护数据隐私的同时，探索高效的跨数据中心大规模深度学习模型训练和优化算法。</p>
+<p>为了解决企业对数据隐私和安全的担忧，可以采用数据脱敏、加密等技术促进数据共享。</p>
+<h3 id="安全路线图">安全路线图</h3>
+<p>LSF-Models的安全性主要分为数据安全性、模型安全性和系统安全性。为此，可以从以下几个方面提高LSF-Model的安全性。</p>
+<p>1)确保数据安全。确保数据安全需要避免恶意篡改或污染数据，并避免向模型引入偏差或错误信息。因此，保证模型的训练数据源是可靠的、高质量的、充分的和具有代表性的是必要的。此外，需要建立数据安全保护机制，防止恶意数据泄露和篡改。</p>
+<p>2)确保模型安全。探索lsf模型的实际对抗性训练和正则化方法[267-269]，以提高模型抵抗恶意干扰和噪声的能力。此外，增强模型的安全性和隐私性，如模型加密[270-272]，防止模型被盗或被逆转。3)确保系统安全。对于基于lsf - model的PHM系统，建立监控系统，及时发现异常操作和攻击行为，同时记录操作日志和审计日志，对安全事件进行调查和跟踪</p>
+<h3 id="可信度路线图">可信度路线图</h3>
+<p>提高lsf模型的可信度是一个综合性的复杂问题，可以从以下几个方面进行优化和提高。</p>
+<p>1)**提高数据质量。**数据质量是模型训练的基础，保证数据质量是提高模型可信度的关键。因此，需要采取一系列措施来保证数据质量，包括数据清洗、去除异常值、数据增强等。</p>
+<p>2)<strong>提高模型的鲁棒性</strong>。探索新的解决方案来提高模型的鲁棒性和抗干扰能力，如提高模型在有噪声[9,10,273 -276]、分布移位[277-281]和非分布情况下的性能[282-284]。</p>
+<p>3)**提高模型评价的综合性。**评价的全面性和公正性是提高模型可信度的关键。要做到这一点，需要利用多个评价指标和多个数据集对模型进行综合评价，同时避免特定场景下的模型偏差等问题。</p>
+<p>4)<strong>保证模型可追溯性</strong>。为了提高模型的可信度，有必要对模型的开发、培训、测试、部署等过程进行充分的记录和跟踪。这样可以保证模型过程的可控性和结果的可验证性，从而提高模型的可信度。</p>
+<h3 id="可迁移性路线图">可迁移性路线图</h3>
+<p>开展lsf模型的目的是推进能够执行所有任务的通用模型的概念。带着这个目标，我们致力于创建一个全面的多任务PHM系统。为了实现这一目标，尽可能提高基础模型的可移植性和适应性是重中之重。PHM领域包含各种各样的下游任务，其应用对象很复杂，因此需要探索新的架构设计方法、特征学习方法和训练算法，以增强现实世界的工业场景的可移植性。</p>
+<p>1)**探索灵活的模型架构设计。**为了构建通用的基础模型，有必要研究灵活的模型体系结构设计，这些设计可以针对不同类型的PHM应用程序(如监控、诊断、预测等)进行定制。</p>
+<p>2)**探索通用特征表示方法。**从不同的数据类型中提取有价值的特征是实现通用模型的关键。这些特征表示算法需要能够捕获各种类型的故障模式，并且需要对不同类型的故障数据具有鲁棒性。</p>
+<p>3)**探索适合PHM应用的训练算法。**虽然在NLP和CV领域已经提出了大量的自监督训练算法[49,69 - 71,124,125]，但只有根据PHM领域的特点设计的训练算法才能最大程度地提高基础模型的可转移性和适应性。</p>
+<h3 id="高级认知路线图">高级认知路线图</h3>
+<p>lsf模型有潜力通过大量的训练数据和精心设计的算法从数据中获取高级认知和学习一般概念。在PHM领域，具有先进认知能力的LSF-Models可以很好地理解工业数据的本质和一般概念。因此，LSF-Models可以迅速适应不同的工业场景和任务，有效地避免产生难以理解的输出。然而，目前的lsf模型所显示的高级认知能力是不够的。除了扩大训练数据量外，还需要探索以下几个方面:</p>
+<p>1)<strong>探索数据需求以实现高级认知能力</strong>。尽管一些现有的lsf - model已经展示出有限的高级认知能力，但实现这种能力需要什么样的数据以及需要多少数据还是未知的。此外，如何充分利用数据信息，在相对较小的数据集上获得可观的认知能力，也是一个值得研究的课题。</p>
+<p>2)<strong>探索实现高级认知能力的模型要求</strong>。大多数现有的lsf模型采用Transformer体系结构，但它有局限性。因此，探索新的Transformer体系结构或设计新颖的模型体系结构以使LSF-Models能够展示更好的认知能力是值得探索的领域。</p>
+<p>3)<strong>探索实现高级认知能力的理论要求</strong>。高级认知能力的实现不能仅仅依靠大量的实验分析;它也需要适当的理论来提供指导性的解决方案。因此，探究lsf模型习得高级认知能力背后的原因和机制将对该领域的发展起到重要的推动作用。</p>
+<h3 id="可解释性路线图">可解释性路线图</h3>
+<p>深度学习因其缺乏可解释性和透明度而受到批评，这种缺陷在lsf模型中更为明显。提高这些模型的可解释性和透明度将提高它们的可信度、可控性和可靠性，使它们更适合于在航空航天和核能等关键工业领域的应用。针对这一问题，未来的研究可以从以下三个方面进行探索。</p>
+<p>1)探索深度可解释模型。在PHM领域，<strong>利用信号分析方法的理论基础实现具有高可解释性的深层模型是一种可行的解决方案[41,46,47,263]。此外，在模型中加入先验知识或物理背景信息也能显著提高模型的可解释性。</strong></p>
+<p>2)探索分析模型可解释性的方法。根据深度模型的特点，<strong>需要探索分析模型可解释性的实用方法。例如，使用可视化方法[41,48,285,286]分析模型的内部结构参数，使用信号分析方法分析模型的滤波器[287]来了解模型学习了哪些特征。</strong></p>
+<p>3)推进深度模型理论研究。<strong>这就需要深入分析基础模型的原理，探索其本质属性、特点、优缺点，并通过理论分析揭示其内在机理和规律[288-290]。</strong></p>
+<p>例如，通过建立基础模型的数学模型并推导其收敛性、泛化性和鲁棒性，可以揭示深层模型的内在机制。</p>
+<h3 id="边缘设备部署路线图">边缘设备部署路线图</h3>
+<p>尽管lsf模型的性能令人印象深刻，但它们的计算需求极大地限制了它们的适用性。为了促进lsf模型在PHM领域的应用，可以从以下几个方面进行探索，使其轻量化。</p>
+<p>1)探索轻量级深度模型。通过探索轻量级深度模型的设计方法[291,292]，开发新的低复杂度算法和算子设计范式，可以减少模型的计算负荷和资源使用。</p>
+<p>2）模型压缩和剪枝。可以探索模型压缩[293,294]和修剪[295,296]技术来减小模型的大小。有效的压缩方法，如权值共享、低秩分解和知识蒸馏可以被采用。此外，冗余的神经元或连接可以通过有效的修剪方法消除。</p>
+<p>3)网络拓扑优化。探索新的网络拓扑设计方案，如大脑激发的尖峰神经网络[297,298]，以实现低功耗和计算需求的深度网络模型。</p>
+<h2 id="前景-通用PHM平台">前景:通用PHM平台</h2>
+<p>传统的基于人工智能的PHM模型通常需要为每个子任务开发独特的数据处理和模型优化算法，才能在特定场景下实现良好的性能。例如，有必要建立轴承的独立故障诊断和RUL估计模型。</p>
+<p>然而，复杂的工业设备可能包含数百个核心部件，为所有部件建立相应的PHM模型是一项浩大的工程。此外，这种应用范式不能充分利用工业设备的多模态关联数据，不能全面表征工业设备的健康状态。此外，所构建的各种子任务模型耗时费力，不能保证模型具有良好的泛化性。如前所述，NLP和CV领域，如ChatGPT[62]和SAM[64]，已经证明了LSF-Models在跨模态多任务场景下的出色表现，在一定程度上实现了所有任务的模型思想。因此，受此启发，实现通用PHM平台以实现所有PHM任务的一个模型成为可能。这一研究理念将彻底改变PHM领域的研究范式，通用PHM平台的实现将显著促进PHM领域的综合智能化。</p>
+<p>图10为高速列车通用PHM平台示意图。<strong>通用PHM平台的核心是大型跨模态基础模型</strong>。该模型**接收来自高铁的各种数据，如传感器数据(包括信号、图像和视频)、维修工单和记录，以及专家经验和知识作为输入。随后，对高速列车各子系统和核心部件的健康状况进行综合评估和监测。**具体而言，采用多模态融合算法和自监督特征表示算法构建跨模态基础模型，使其能够理解和学习多模态列车数据的通用、高质量的数据特征。随后利用零/少次学习范式将跨模态基础模型扩展到各个训练PHM子任务，从而实现平台效应。跨模态基础模型的最终目标是通过学习大量列车运行数据，为PHM任务(如健康监测、故障预测、异常检测、RUL估计、维护计划和健康管理)提供强大的、通用的数据挖掘和理解工具。即使对于训练过程中不存在的新对象和数据，跨模态基础模型仍然可以提供相当大的特征挖掘能力。因此，所提出的通用PHM平台有望成为PHM领域的核心工具，在提高工业设备健康管理效率和降低维护成本方面发挥关键作用。</p>
+<p><img src="https://alidocs.oss-cn-zhangjiakou.aliyuncs.com/res/v1GXn4gBkj9xlDQ4/img/c4eeb855-2b7d-4787-ae8b-34d2355a59a9.png" alt="image"></p>
+<h1>结论</h1>
+<p>目前，深度学习的研究正在经历一场新的革命，即单一模式、单一任务、有限数据的研究范式(AI 1.0)正在迅速向多模式、多任务、海量数据、超大模型的研究范式(AI 2.0)发展。AI 2.0的重点是开发具有跨领域知识的LSF-Models，通过对海量数据集的训练，可以显示出较强的泛化和多任务能力。为此，本文全面概述了LSF-Models的三大技术要点，并分析了LSF-Models在NLP和CV中的研究现状。文献综述表明，在PHM领域对lsf模型的研究严重缺乏，对于如何构建适用于PHM应用的lsf模型也没有可行的解决方案。因此，本文从数据集、深度模型、学习算法、数据融合四个方面全面回答了如何构建适合PHM领域的lsf模型。最后，本文试图从更广泛、更全球化的角度讨论lsf模型的挑战和路线图。总体而言，本调查系统地介绍了lsf模型及其在PHM领域的研究现状、挑战、解决方案、路线图和前景，希望对该领域未来的研究提供有价值的指导。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">小海</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://brotherhai.github.io/posts/52035/">https://brotherhai.github.io/posts/52035/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%A4%A7%E6%A8%A1%E5%9E%8B/">大模型</a><a class="post-meta__tags" href="/tags/PHM/">PHM</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.liuxiaohai.ren/20230516211434.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/posts/15662/"><img class="next-cover" src="https://s4.ax1x.com/2021/12/14/oxfL7j.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">无监督域共享CNN用于从稳定速度到时变速度的机器故障转移诊断</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://s4.ax1x.com/2021/12/15/ozT0iQ.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">小海</div><div class="author-info__description">辽远的海的相思</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">12</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">9</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/BrotherHai"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">摘要</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">PHM的大模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM%E7%9A%84%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">3.1.</span> <span class="toc-text">PHM的大规模数据集</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6"><span class="toc-number">3.1.1.</span> <span class="toc-text">研究现状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">3.1.2.</span> <span class="toc-text">解决方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM-Transformer"><span class="toc-number">3.2.</span> <span class="toc-text">PHM Transformer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6-2"><span class="toc-number">3.2.1.</span> <span class="toc-text">研究现状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-2"><span class="toc-number">3.2.2.</span> <span class="toc-text">解决方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM%E7%9A%84%E8%87%AA%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0"><span class="toc-number">3.3.</span> <span class="toc-text">PHM的自监督学习</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6-3"><span class="toc-number">3.3.1.</span> <span class="toc-text">研究现状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-3"><span class="toc-number">3.3.2.</span> <span class="toc-text">解决方案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM%E7%9A%84%E5%A4%9A%E6%A8%A1%E6%80%81%E8%9E%8D%E5%90%88"><span class="toc-number">3.4.</span> <span class="toc-text">PHM的多模态融合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A0%94%E7%A9%B6%E7%8E%B0%E7%8A%B6-4"><span class="toc-number">3.4.1.</span> <span class="toc-text">研究现状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88-4"><span class="toc-number">3.4.2.</span> <span class="toc-text">解决方案</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">挑战和未来路线图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM%E4%B8%AD%E5%A4%A7%E5%9E%8B%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E6%8C%91%E6%88%98"><span class="toc-number">4.1.</span> <span class="toc-text">PHM中大型基础模型的挑战</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%95%B0%E6%8D%AE%E9%9B%86"><span class="toc-number">4.1.1.</span> <span class="toc-text">大规模数据集</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E6%80%A7"><span class="toc-number">4.1.2.</span> <span class="toc-text">安全性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BF%A1%E5%BA%A6"><span class="toc-number">4.1.3.</span> <span class="toc-text">可信度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%BF%81%E7%A7%BB%E6%80%A7"><span class="toc-number">4.1.4.</span> <span class="toc-text">可迁移性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%88%E8%BF%9B%E7%9A%84%E8%AE%A4%E7%9F%A5"><span class="toc-number">4.1.5.</span> <span class="toc-text">先进的认知</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7"><span class="toc-number">4.1.6.</span> <span class="toc-text">可解释性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E7%BC%98%E8%AE%BE%E5%A4%87%E9%83%A8%E7%BD%B2"><span class="toc-number">4.1.7.</span> <span class="toc-text">边缘设备部署</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#PHM%E4%B8%AD%E5%A4%A7%E5%B0%BA%E5%BA%A6%E5%9F%BA%E7%A1%80%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.</span> <span class="toc-text">PHM中大尺度基础模型的路线图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%A7%E8%A7%84%E6%A8%A1%E6%95%B0%E6%8D%AE%E9%9B%86%E7%9A%84%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.1.</span> <span class="toc-text">大规模数据集的路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.2.</span> <span class="toc-text">安全路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E4%BF%A1%E5%BA%A6%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.3.</span> <span class="toc-text">可信度路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%BF%81%E7%A7%BB%E6%80%A7%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.4.</span> <span class="toc-text">可迁移性路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E7%BA%A7%E8%AE%A4%E7%9F%A5%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.5.</span> <span class="toc-text">高级认知路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E8%A7%A3%E9%87%8A%E6%80%A7%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.6.</span> <span class="toc-text">可解释性路线图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BE%B9%E7%BC%98%E8%AE%BE%E5%A4%87%E9%83%A8%E7%BD%B2%E8%B7%AF%E7%BA%BF%E5%9B%BE"><span class="toc-number">4.2.7.</span> <span class="toc-text">边缘设备部署路线图</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%99%AF-%E9%80%9A%E7%94%A8PHM%E5%B9%B3%E5%8F%B0"><span class="toc-number">4.3.</span> <span class="toc-text">前景:通用PHM平台</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">结论</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/52035/" title="用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图"><img src="https://cdn.liuxiaohai.ren/20230516211434.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图"/></a><div class="content"><a class="title" href="/posts/52035/" title="用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图">用于预测和健康管理的类似ChatGPT的大规模基础模型：调查和路线图</a><time datetime="2023-05-16T11:27:00.000Z" title="Created 2023-05-16 19:27:00">2023-05-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/15662/" title="无监督域共享CNN用于从稳定速度到时变速度的机器故障转移诊断"><img src="https://s4.ax1x.com/2021/12/14/oxfL7j.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无监督域共享CNN用于从稳定速度到时变速度的机器故障转移诊断"/></a><div class="content"><a class="title" href="/posts/15662/" title="无监督域共享CNN用于从稳定速度到时变速度的机器故障转移诊断">无监督域共享CNN用于从稳定速度到时变速度的机器故障转移诊断</a><time datetime="2023-05-13T07:08:54.000Z" title="Created 2023-05-13 15:08:54">2023-05-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/51274/" title="河大一季度"><img src="https://cdn.liuxiaohai.ren/d3093a3c482d03895865389a1c24238.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="河大一季度"/></a><div class="content"><a class="title" href="/posts/51274/" title="河大一季度">河大一季度</a><time datetime="2023-05-12T11:47:04.000Z" title="Created 2023-05-12 19:47:04">2023-05-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/16234/" title="自监督学习食谱"><img src="https://s4.ax1x.com/2021/12/14/oxfL7j.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="自监督学习食谱"/></a><div class="content"><a class="title" href="/posts/16234/" title="自监督学习食谱">自监督学习食谱</a><time datetime="2023-04-26T06:39:39.000Z" title="Created 2023-04-26 14:39:39">2023-04-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/58900/" title="基于对比学习的领域自适应网络用于变工况下轴承故障诊断"><img src="https://cdn.liuxiaohai.ren/20230419090747.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基于对比学习的领域自适应网络用于变工况下轴承故障诊断"/></a><div class="content"><a class="title" href="/posts/58900/" title="基于对比学习的领域自适应网络用于变工况下轴承故障诊断">基于对比学习的领域自适应网络用于变工况下轴承故障诊断</a><time datetime="2023-04-18T07:17:14.000Z" title="Created 2023-04-18 15:17:14">2023-04-18</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By 小海</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="chat_btn" type="button" title="rightside.chat_btn"><i class="fas fa-sms"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Algolia</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4/dist/instantsearch.production.min.js"></script><script src="/js/search/algolia.js"></script><div class="js-pjax"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/contrib/copy-tex.css"><script>(() => {
+  document.querySelectorAll('#article-container span.katex-display').forEach(item => {
+    btf.wrap(item, 'div', { class: 'katex-wrap'})
+  })
+})()</script></div><script>window.$crisp = [];
+window.CRISP_WEBSITE_ID = "2805294f-b0a7-4aef-a341-71156c7845d4";
+(function () {
+  d = document;
+  s = d.createElement("script");
+  s.src = "https://client.crisp.chat/l.js";
+  s.async = 1;
+  d.getElementsByTagName("head")[0].appendChild(s);
+})();
+$crisp.push(["safe", true])
+
+if (true) {
+  $crisp.push(["do", "chat:hide"])
+  $crisp.push(["on", "chat:closed", function() {
+    $crisp.push(["do", "chat:hide"])
+  }])
+  var chatBtnFn = () => {
+    var chatBtn = document.getElementById("chat_btn")
+    chatBtn.addEventListener("click", function(){
+      $crisp.push(["do", "chat:show"])
+      $crisp.push(["do", "chat:open"])
+
+    });
+  }
+  chatBtnFn()
+} else {
+  if (true) {
+    function chatBtnHide () {
+      $crisp.push(["do", "chat:hide"])
+    }
+    function chatBtnShow () {
+      $crisp.push(["do", "chat:show"])
+    }
+  }
+}</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
